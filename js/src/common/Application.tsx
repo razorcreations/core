@@ -40,7 +40,6 @@ export type RequestErrorResponse = {
     detail?: string;
   }[];
 };
-i;
 
 /**
  * The `App` class provides a container for an application, as well as various
