@@ -23,8 +23,9 @@ jobs:
         with:
           node-version: "14"
 
-      - name: Install Flarum Prettier config
-        run: npm i -g @flarum/prettier-config prettier
+      - name: Install JS dependencies
+        run: npm i
+        working-directory: ./js
 
       - name: Check JS formatting
         run: prettier --check src
